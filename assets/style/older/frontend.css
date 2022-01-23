@@ -1,0 +1,170 @@
+@font-face {
+	font-family: 'Arial Rounded MT';
+	src: url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTBold.eot');
+	src: url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTBold.eot?#iefix') format('embedded-opentype'),
+		url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTBold.woff') format('woff'),
+		url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arial Rounded MT Std';
+	src: url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTStd-ExtraBold.eot');
+	src: url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTStd-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTStd-ExtraBold.woff') format('woff'),
+		url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTStd-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Arial Rounded MT';
+
+    padding-top: 0px;
+
+    /*-webkit-text-fill-color: transparent;*/
+    /*
+    -webkit-text-fill-color: #FFFFFF;
+    -webkit-text-stroke: 1px #1A75BB;
+
+    text-shadow: 1px 1px 4px #333333;
+    */
+}
+
+.tulisan{
+	text-align: center;
+	font-size: 28px;
+	font-family: 'Arial Rounded MT Std';
+}
+
+.screen {
+ 
+}
+@media (max-width: 600px) {
+  .screen {
+    display: none;
+  }
+
+  .base-logo {
+        display: none;
+    }
+  
+}
+@media (min-width: 600px) {
+	.screen {
+	height: 106px;
+	width: 130px;
+	text-align: center;  
+	position: absolute;
+	right: -980px;
+	display: none;
+	z-index: 100;
+	color: #fff;
+	cursor: pointer;
+	background-image: url("/lolinid/assets/images/frontend/hubungi-kami.png");
+	}
+
+    .base-menu {
+        display: none;
+    }
+
+}
+
+
+
+/**
+
+Styleshett Artikel
+
+*/
+
+#myimages {
+        display: inline-block;
+        margin: 0;
+        padding: 10px;
+    }
+
+    #myimages figure{
+        overflow: hidden;
+        position: relative;
+    }
+
+    #myimages figure img{
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+
+    /*efek 1*/
+
+    .myeffect figure figcaption{
+        position: absolute;
+        background-color: #E82328;
+        //top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 20%;
+        -moz-opacity: 0;
+        opacity: 0;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .myeffect figure figcaption a{
+        color: #fff;
+
+    }
+
+    .myeffect figure figcaption span{
+        position: absolute;
+        font-family: fontAwesome;
+        font-size: 20px;
+        top: 50%;
+        left: 30%;
+        -moz-opacity: 0;
+        opacity: 0;
+        -moz-transform : translate(-50%,-50%);
+        -webkit-transform : translate(-50%,-50%);
+        transform : translate(-50%,-50%);
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+
+
+    }
+
+    .myeffect figure:hover figcaption{
+        -moz-opacity: 0.8;
+        opacity: 0.8;
+    }
+
+    .myeffect figure:hover figcaption span{
+        -moz-opacity: 1;
+        opacity: 1;
+        left: 50%;
+    }
+    /*efek 1*/
+
+    .bingkai {
+    	border-radius: 15px 15px 15px 15px;
+    	border: 2px solid #333333;
+    }
+
+
+
+/** navbar otomatis terbuka saat hover
+*
+*/
+ul.nav li.dropdown:hover ul.dropdown-menu{
+display: block;
+}
+
+/* Jika anda ingin menghilangkan tanda panah (arrow) */
+a.menu:after, .dropdown-toggle:after {
+content: none;
+}

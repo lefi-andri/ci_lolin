@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /*.php$
+Disallow: /*.zip$
+Disallow: /*?*
+Disallow: /*?
+
+User-agent: *
+Disallow: /authentication/

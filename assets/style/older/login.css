@@ -1,0 +1,36 @@
+/**
+
+FONT FAMILY
+
+*/
+@import url("font-awesome.min.css");
+@font-face {
+	font-family: 'Arial Rounded MT';
+	src: url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTBold.eot');
+	src: url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTBold.eot?#iefix') format('embedded-opentype'),
+		url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTBold.woff') format('woff'),
+		url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arial Rounded MT Std';
+	src: url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTStd-ExtraBold.eot');
+	src: url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTStd-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTStd-ExtraBold.woff') format('woff'),
+		url('http://localhost/lolinid/assets/webfonts/ArialRoundedMTStd-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Arial Rounded MT';
+}
+
+.footer {
+	padding-top: 40px;
+}
+.base-footer {
+	font-size: 12px;	
+}
